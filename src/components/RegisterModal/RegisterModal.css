@@ -1,0 +1,15 @@
+.overblock {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.overblock button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button-cancel input {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
