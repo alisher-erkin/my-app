@@ -5,11 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const menuItems = [
   { name: "Кухни", path: "/kitchen" },
   { name: "Шкафы", path: "/cabinets" },
+  { name: "Гостинные", path: "/living-room" },
+  { name: "Спальни", path: "/bed-room" },
   { name: "Прихожие", path: "/hallway" },
-  { name: "Мебель для гостинной", path: "/living-room" },
-  { name: "Комоды", path: "/chest" },
-  { name: "Детские комнаты", path: "/kids-room" },
-  { name: "Компьютерные  столы", path: "/computer-desk" }
+  { name: "Гардеробные", path: "/wardrobes" },
+  { name: "Детские", path: "/kids-room" },
 ];
 
 export default function NavigationMenu() {

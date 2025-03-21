@@ -15,6 +15,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import NavigationMenu from '../components/NavigationMenu/NavigationMenu';
 import KitchenForm from '../components/KitchenForm/KitchenForm';
 import Cabinets from '../components/Cabinets/Cabinets';
+import LivingForm from "../components/LivingForm/LivingForm";
 
 
 
@@ -63,6 +64,7 @@ function Header() {
       <Routes>
         <Route path="/kitchen" element={<KitchenForm />} />
         <Route path="/cabinets" element={<Cabinets />} />
+        <Route path="/living-room" element={<LivingForm />} />
         
         {/* Добавь другие маршруты */}
       </Routes>

@@ -1,10 +1,9 @@
 import { useState } from "react";
-import "../Cabinets/Cabinets.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
-export default function Cabinets() {
+export default function LivingRoom() {
   const [formData, setFormData] = useState({
     layout: "",
     dimensions: { A: "", B: "", C: "" },
@@ -71,12 +70,10 @@ export default function Cabinets() {
         {/* Материалы */}
         <div className="row mb-3">
           <div className="col">
-            <label className="form-label">Количество дверей</label>
+            <label className="form-label">Материал фасада:</label>
             <select className="form-select" name="facadeMaterial" onChange={handleChange}>
               <option value="">Выберите</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+              <option value="Плёночные фасады">Плёночные фасады</option>
             </select>
           </div>
           <div className="col">

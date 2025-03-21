@@ -118,6 +118,7 @@ export default function KitchenForm() {
 
         {/* Загрузка файла */}
         <div className="mb-3">
+        <h5>Вы можете отправить нам понравившееся фото в качастве примера!</h5>
           <label className="form-label">Загрузите эскиз:</label>
           <input type="file" className="form-control" onChange={handleFileChange} />
         </div>
