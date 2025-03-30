@@ -18,17 +18,17 @@ const HomePage = () => {
 
       <section className="row text-center mb-5">
         <div className="col-md-4">
-          <img src="/assets/images/order.png" alt="Размещение заказа" className="img-fluid mb-3" />
+          <img src="images/icon-1.png" alt="Flaticon" className="img-fluid mb-3" />
           <h3>Размещайте заказ</h3>
           <p>Опишите свою мебельную задачу: шкаф, кухня, диван, стол и любые другие изделия.</p>
         </div>
         <div className="col-md-4">
-          <img src="/assets/images/offers.png" alt="Получение предложений" className="img-fluid mb-3" />
+          <img src="images/icon-2.png" alt="Flaticon" className="img-fluid mb-3" />
           <h3>Получайте предложения</h3>
           <p>Исполнители начнут предлагать свои условия, цены и сроки.</p>
         </div>
         <div className="col-md-4">
-          <img src="/assets/images/result.png" alt="Выбор лучшего" className="img-fluid mb-3" />
+          <img src="images/icon-3.png" alt="Flaticon" className="img-fluid mb-3" />
           <h3>Выбирайте лучшее</h3>
           <p>Оценивайте предложения, смотрите портфолио и отзывы, выбирайте лучшего мастера.</p>
         </div>
