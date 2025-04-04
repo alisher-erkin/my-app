@@ -6,6 +6,8 @@ import  Navbar  from  "react-bootstrap/Navbar";
 import  Nav  from "react-bootstrap/Nav";
 import  Col  from "react-bootstrap/Col";
 import logo from "../Logo/logo.jpg";
+import { Button } from "react-bootstrap";
+import "../Header/Header.css";
 
 
 function Header() {
@@ -21,15 +23,13 @@ function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto justify-content-center">
-              <NavLink to="/orders">Размещение заказов</NavLink>
-              <NavLink to="/performers">Исполнители</NavLink>
-              <NavLink to="/blog">Блог</NavLink>
-              <NavLink to="/rules">Правила</NavLink>
+              <NavLink to="/orders" className="text-secondary">Размещение заказов</NavLink>
+              <NavLink to="/performers" className="text-secondary">Исполнители</NavLink>
+              <NavLink to="/blog" className="text-secondary">Блог</NavLink>
+              <NavLink to="/rules" className="text-secondary">Правила</NavLink>
             </Nav>
-            <Col xs="auto">
-              <button>
-                <NavLink to="/login">Войти</NavLink>
-              </button>
+            <Col xs="auto" className="bg-primary">
+              <Button href="/login">Логин</Button>
             </Col>
           </Navbar.Collapse>
         </Container>

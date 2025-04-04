@@ -1,0 +1,7 @@
+.navbar-nav {
+    margin: 0 auto;
+}
+.navbar-nav a {
+    margin-right: 50px;
+    text-decoration: none;
+}

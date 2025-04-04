@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
-export default function LivingRoom() {
+export default function Kids() {
   const [formData, setFormData] = useState({
     layout: "",
     dimensions: { A: "", B: "", C: "" },

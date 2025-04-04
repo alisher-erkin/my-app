@@ -26,7 +26,12 @@ export default function KitchenForm() {
   const handleFileChange = (e) => {
     setFormData({ ...formData, file: e.target.files[0] });
   };
+ 
+  const [text, setText] = useState("");
 
+  const handleTextChange = (e) => {
+    setText(e.target.value);
+  };
  
   
 
@@ -116,12 +121,20 @@ export default function KitchenForm() {
             </select>
         </div>
 
+        {/* Text */}
+        <div className="mb-3">
+          <label className="form-label">Опишите что вы хотели бы получить</label>
+          <input type="text" className="form-control" value = {text} placeholder="Введите что-то..." onChange={handleTextChange} />
+        </div>
+       
+
         {/* Загрузка файла */}
         <div className="mb-3">
         <h5>Вы можете отправить нам понравившееся фото в качастве примера!</h5>
           <label className="form-label">Загрузите эскиз:</label>
           <input type="file" className="form-control" onChange={handleFileChange} />
         </div>
+       
 
         {/* Кнопка отправки */}
         <button type="submit" className="btn btn-primary w-100">

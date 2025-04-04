@@ -12,6 +12,9 @@ import KitchenForm from "./components/KitchenForm/KitchenForm";
 import Cabinets from "./components/Cabinets/Cabinets";
 import LivingForm from "./components/LivingForm/LivingForm";
 import BedRoom from "./components/BedRoom/BedRoom";
+import Hallway from "./components/Hallway/Hallway";
+import WardRobes from "./components/WardRobes/WardRobes";
+import Kids from "./components/Kids/Kids";
 
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
             <Route path="/cabinets" element={<Cabinets />} />
             <Route path="/living-room" element={<LivingForm />} />
             <Route path="/bed-room" element={<BedRoom />} />
+            <Route path="/hallway" element={<Hallway />} />
+            <Route path="/wardrobes" element={<WardRobes />} />
+            <Route path="/kids-room" element={<Kids />} />
             {/* Добавь другие маршруты */}
           </Routes>
 

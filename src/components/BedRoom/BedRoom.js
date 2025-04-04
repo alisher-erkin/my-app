@@ -26,7 +26,11 @@ export default function BedRoom() {
     setFormData({ ...formData, file: e.target.files[0] });
   };
 
- 
+  const [text, setText] = useState("");
+
+  const handleTextChange = (e) => {
+    setText(e.target.value);
+  };
   
 
 
@@ -101,6 +105,12 @@ export default function BedRoom() {
               <option value="">Выберите</option>
               <option value="Плёночные фасады">Плёночные фасады</option>
             </select>
+        </div>
+
+        {/* Text */}
+        <div className="mb-3">
+          <label className="form-label">Опишите что вы хотели бы получить</label>
+          <input type="text" className="form-control" value={text} placeholder="Введите что-то..." onChange={handleTextChange} />
         </div>
 
         {/* Загрузка файла */}

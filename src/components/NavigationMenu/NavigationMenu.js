@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -14,6 +15,7 @@ const menuItems = [
 
 export default function NavigationMenu() {
   const location = useLocation(); // Получаем текущий URL
+  const [openMenu, setOpenMenu] = useState(null);
 
   return (
     <nav className="bg-white py-3 shadow-sm">
