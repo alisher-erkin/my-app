@@ -124,7 +124,7 @@ export default function KitchenForm() {
         {/* Text */}
         <div className="mb-3">
           <label className="form-label">Опишите что вы хотели бы получить</label>
-          <input type="text" className="form-control" value = {text} placeholder="Введите что-то..." onChange={handleTextChange} />
+          <input type="text" className="form-control" value={text} placeholder="Введите что-то..." onChange={handleTextChange} />
         </div>
        
 

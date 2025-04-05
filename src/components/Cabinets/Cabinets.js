@@ -41,6 +41,14 @@ export default function Cabinets() {
       <form className="p-4 border rounded shadow-sm bg-light">
         {/* Планировка */}
        
+        <div className="container mt-4">
+          <div className="row">
+            <div className="col-lg-4 mx-auto">
+               <img src="Images/img-hallway.png" alt="img-hallway" className="img-fluid" />
+            </div>
+            
+          </div>
+       </div>
 
         <div className="mb-3">
           <label className="form-label">Размеры:</label>
