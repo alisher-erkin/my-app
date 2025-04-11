@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../LivingForm/LivingForm.css";
 
 
 
@@ -41,34 +42,16 @@ export default function LivingRoom() {
         {/* Планировка */}
        
 
-        <div className="mb-3">
-          <label className="form-label">Размеры:</label>
-          <select className="form-select" name="layout" onChange={handleChange}>
-            <option value="">Выберите</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-          </select>
-        </div>
+       
 
         {/* Размеры */}
         <div className="row mb-3">
-          {["A", "B", "C"].map((dim) => (
-            <div className="col" key={dim}>
-              <label className="form-label">{dim} (мм)</label>
-              <input
-                type="number"
-                className="form-control"
-                name={dim}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    dimensions: { ...formData.dimensions, [dim]: e.target.value },
-                  })
-                }
-              />
-            </div>
-          ))}
+          <h3 className="living-title-text text-center">Корпусная мебель для Гостинной</h3>
+          <div className="living-text-block">Для изготовления корпусной мебели для Гостинной исполнителю понадобится дизайн с размерами. 
+            Исходя из этого будет формироваться цена. Вам нужно будет закрепить, отправить  и описать ваши пожелания в каждом 
+            поле! Если у вас нет дизайна  вам нужно будет прикрепить и отправить понравившееся фото корпусной мебели  из 
+            интернета и указать размеры. Вам нужно будет заполнить все поля расположенные ниже. 
+          </div>
         </div>
 
         {/* Материалы */}

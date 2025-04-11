@@ -41,34 +41,16 @@ export default function BedRoom() {
         {/* Планировка */}
         
 
-        <div className="mb-3">
-          <label className="form-label">Размеры:</label>
-          <select className="form-select" name="layout" onChange={handleChange}>
-            <option value="">Выберите</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-          </select>
-        </div>
+      
 
         {/* Размеры */}
         <div className="row mb-3">
-          {["A", "B", "C"].map((dim) => (
-            <div className="col" key={dim}>
-              <label className="form-label">{dim} (мм)</label>
-              <input
-                type="number"
-                className="form-control"
-                name={dim}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    dimensions: { ...formData.dimensions, [dim]: e.target.value },
-                  })
-                }
-              />
-            </div>
-          ))}
+          <h3 className="living-title-text text-center">Корпусная мебель для Спальни</h3>
+          <div className="living-text-block">Корусная мебель для Спальни имеет разнообразные формы и поэтому исполнителю 
+            потребуется дизайн с размерами. Для отправки заявки вам необходимо закрепить, отправить и описать ваши
+            пожелания. Если у вас нет дизайна  вам нужно будет прикрепить и оптправить понравившееся фото корпусной мебели  
+            из интернета и указать размеры. Вам нужно будет заполнить все поля расположенные ниже.
+          </div>
         </div>
 
         {/* Материалы */}

@@ -41,16 +41,6 @@ export default function WardRobes() {
         {/* Планировка */}
        
 
-        <div className="mb-3">
-          <label className="form-label">Размеры:</label>
-          <select className="form-select" name="layout" onChange={handleChange}>
-            <option value="">Выберите</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-          </select>
-        </div>
-
         {/* Размеры */}
         <div className="row mb-3">
           {["A", "B", "C"].map((dim) => (

@@ -53,21 +53,13 @@ export default function KitchenForm() {
                <img src="Images/img_3.png" alt="img_3" className="img-fluid" />
             </div>
           </div>
-    </div>
+       </div>
 
-        <div className="mb-3">
-          <label className="form-label">Размеры:</label>
-          <select className="form-select" name="layout" onChange={handleChange}>
-            <option value="">Выберите</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-          </select>
-        </div>
+      
 
         {/* Размеры */}
         <div className="row mb-3">
-          {["A", "B", "C"].map((dim) => (
+          {["A", "B", "C", "D"].map((dim) => (
             <div className="col" key={dim}>
               <label className="form-label">{dim} (мм)</label>
               <input
