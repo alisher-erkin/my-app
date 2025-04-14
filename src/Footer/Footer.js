@@ -1,45 +1,39 @@
 import React from "react";
+import Container  from "react-bootstrap/Container";
+import  Navbar  from  "react-bootstrap/Navbar";
+import logo from "../Logo/logo.jpg";
+import { Row } from "react-bootstrap";
+import SocialIcons from "../components/SocialIcons/SocialIcons";
 
 const Footer = () => {
-    return (
-        <footer className="bg-light py-4 mt-5">
-            <div className="container">
-                <div className="row">
-                    {/* Логотип */}
-                    <div className="col-md-3">
-                        <h5 className="fw-bold">LOGO</h5>
-                    </div>
-
-                    {/* Меню */}
-                    <div className="col-md-3">
-                        <h5 className="fw-bold">Меню</h5>
-                        <ul className="list-unstyled">
-                            <li><a href="#" className="text-dark text-decoration-none">Размещение заказа</a></li>
-                            <li><a href="#" className="text-dark text-decoration-none">Исполнители</a></li>
-                            <li><a href="#" className="text-dark text-decoration-none">Блог</a></li>
-                            <li><a href="#" className="text-dark text-decoration-none">Правила</a></li>
-                        </ul>
-                    </div>
-
-                    {/* Соцсети */}
-                    <div className="col-md-3">
-                        <h5 className="fw-bold">Мы в соц сетях</h5>
-                        <ul className="list-unstyled">
-                            <li><a href="#" className="text-dark text-decoration-none">Facebook</a></li>
-                            <li><a href="#" className="text-dark text-decoration-none">Instagram</a></li>
-                            <li><a href="#" className="text-dark text-decoration-none">Telegram</a></li>
-                        </ul>
-                    </div>
-
-                    {/* Адрес */}
-                    <div className="col-md-3">
-                        <h5 className="fw-bold">Адрес</h5>
-                        <p className="mb-0">г. Ташкент, ул. Беруний</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+   return (
+     <Container>
+        <Row>
+        <div className="col-md-3">
+           <Navbar.Brand href="/">  
+             <img src={logo} alt="logo" />
+           </Navbar.Brand>
+        </div>
+        <div className="col-md-3">
+            
+            <ul className="space-y-2 text-sm">
+               <li><a href="/orders" className="text-secondary">Размещение заказа</a></li>
+               <li><a href="/performers" className="text-secondary">Исполнители</a></li>
+               <li><a href="/blog" className="text-secondary">Блог</a></li>
+               <li><a href="/rules" className="text-secondary">Правила</a></li>
+          </ul>
+        </div>
+        <div className="col-md-3">
+            <h5>Мы в соцсетях</h5>
+            <SocialIcons />
+        </div>
+        <div className="col-md-3">
+           <h5 className="fw-bold">Адрес</h5>
+           <p className="mb-0">г. Ташкент, ул. Беруний</p>
+        </div>
+        </Row>
+     </Container>
+   );
 };
 
 export default Footer;
